@@ -85,6 +85,16 @@ sr.reveal(
 sr.reveal(`.about-imageContent, .menu-items`, { origin: "left" });
 sr.reveal(`.about-details, .time-table`, { origin: "right" });
 
+// Lazy loading images
+const imgTargets = document.querySelectorAll("img[data-src]");
+
+const loadImg = (image) => {
+  image.setAttribute("src", image.getAttribute("data-src"));
+  image.onload = () => {
+    image.removeAttribute("data-src");
+  };
+};
+
 
 // sr.reveal('.section', { interval: 200 });
 // sr.reveal('.section-title', { delay: 800 });
