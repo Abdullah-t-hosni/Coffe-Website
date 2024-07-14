@@ -598,13 +598,13 @@ img {
   margin-top: 3rem;
   grid-template-columns: repeat(5, 1fr);
 }
-.brand-img {
+.brand-image {
   width: 150px;
   object-fit: contain;
   opacity: 0.4;
   transition: var(--tran-0-5);
 }
-.brand-img:hover {
+.brand-image:hover {
   opacity: 1;
 }
 /* Review */
@@ -895,6 +895,9 @@ img {
 
 @media screen and (max-width: 600px) {
 
+  .homeTitle {
+    font-size: 2.5rem;
+  }
 
   .container {
     padding: 0.5rem;
@@ -929,4 +932,6 @@ img {
   .footer-linkContent {
     justify-items: center;
   }
+
+
 }
